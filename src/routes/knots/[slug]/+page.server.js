@@ -1,6 +1,7 @@
 // import { PWD } from '$env/static/private'
 import { readFileSync } from 'fs'
-import { Converter } from 'showdown'
+import { marked } from 'marked'
+
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
 	const filename = 'src/lib/data/' + params.slug.toLowerCase().replace(' ', '') + '.md'
@@ -9,8 +10,7 @@ export async function load({ params }) {
 	let filedata = ''
 	try {
 		filedata = await readFileSync(filename).toString()
-		let converter = new Converter()
-		filedata = converter.makeHtml(filedata)
+		filedata = marked.parse(filedata)
 	} catch (e) {
 		filedata = 'Not found.'
 	}
