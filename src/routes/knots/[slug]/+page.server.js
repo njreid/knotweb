@@ -1,24 +1,34 @@
 // import { PWD } from '$env/static/private'
 import { readFileSync } from 'fs'
-import { marked } from 'marked'
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
-	const filename = 'src/lib/data/' + params.slug.toLowerCase().replace(' ', '') + '.md'
-	// console.log(PWD)
-	console.log(filename)
-	let filedata = ''
+	// @ts-ignore
+	// const filename = '../${params.slug.toLowerCase().replace(" ", "")}.md'
+	// // console.log(PWD)
+	// console.log(filename)
+	// let filedata = ''
+	// try {
+	// 	filedata = await import(filename
+	// } catch (e) {
+	// 	filedata = 'Not found.'
+	// }
+	// console.log(filedata)
+	// return {
+	// 	product: {
+	// 		title: params.slug,
+	// 		content: filedata
+	// 	}
+	// }'
+
+	let title = params.slug
+	let content = '<p>Not found.</p>'
 	try {
-		filedata = await readFileSync(filename).toString()
-		filedata = marked.parse(filedata)
-	} catch (e) {
-		filedata = 'Not found.'
-	}
-	console.log(filedata)
+		const knotDetail = await import(`../${params.slug}.md`)
+		content = knotDetail.default.render().html
+	} catch {}
 	return {
-		product: {
-			title: params.slug,
-			content: filedata
-		}
+		title,
+		content
 	}
 }

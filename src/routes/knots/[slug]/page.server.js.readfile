@@ -1,5 +1,6 @@
 // import { PWD } from '$env/static/private'
 import { readFileSync } from 'fs'
+import { marked } from 'marked'
 
 /** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
@@ -9,10 +10,10 @@ export async function load({ params }) {
 	let filedata = ''
 	try {
 		filedata = await readFileSync(filename).toString()
+		filedata = marked.parse(filedata)
 	} catch (e) {
 		filedata = 'Not found.'
 	}
-	// const filedata = import(filename)
 	console.log(filedata)
 	return {
 		product: {

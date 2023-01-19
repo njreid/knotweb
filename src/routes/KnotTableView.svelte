@@ -8,7 +8,7 @@
 	+each('$knots as knot')
 		.knot.card.info
 			p.summary
-				a(href="/knots/{knot.name}") { knot.name.toUpperCase() }
+				a(href="/knots/{knot.name.toLowerCase().replace(' ', '')}") { knot.name.toUpperCase() }
 			p { knot.description }
 			p.tags
 				+each('knot.use_category.split(",") as tag')
