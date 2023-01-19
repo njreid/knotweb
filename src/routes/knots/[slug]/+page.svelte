@@ -7,6 +7,6 @@
 </script>
 
 <template lang="pug">
-h1 {data.title}
+//- h1 {data.title}
 .content {@html data.content}
 </template>

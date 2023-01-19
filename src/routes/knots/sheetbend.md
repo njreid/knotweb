@@ -1,3 +1,5 @@
+## Sheet Bend
+
 The Sheet Bend knot, also known as the Weaver's Knot or the Double Overhand Bend, has been used for centuries by sailors, fisherman, and other seafaring individuals. The knot was first recorded in use by ancient sailors in the Mediterranean. The earliest known depictions of the knot can be found in the hieroglyphs of ancient Egyptian ships, where it was used to tie together different sizes of ropes.
 
 ## History
