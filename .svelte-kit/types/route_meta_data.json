@@ -1,0 +1,7 @@
+{
+	"/": [],
+	"/about": [],
+	"/knots/[slug]": [
+		"src/routes/knots/[slug]/+page.server.js"
+	]
+}
