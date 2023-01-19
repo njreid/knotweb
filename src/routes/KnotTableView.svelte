@@ -4,27 +4,42 @@
 
 <template lang="pug">
 
-.knots
-	+each('$knots as knot')
-		.knot.card.info
-			p.summary
-				a(href="/knots/{knot.name.toLowerCase().replace(' ', '')}") { knot.name.toUpperCase() }
-			p { knot.description }
-			p.tags
-				+each('knot.use_category.split(",") as tag')
-					.tag {tag.toUpperCase()}
+section.knots
+	ul
+		+each('$knots as knot')
+			li
+				a(href="/knots/{knot.name.toLowerCase().replace(' ', '')}")
+					.knot.card.info
+						p.summary { knot.name.toUpperCase() }
+						p.smaller { knot.description }
+						p.tags
+							+each('knot.use_category.split(",") as tag')
+								.tag {tag.toUpperCase()}
 
 </template>
 
 <style lang="stylus">
 
+li
+	list-style none
+
+li > a
+	text-decoration none
+	color white
+
 .knots
-	display flex
-	flex-flow wrap
-	gap 20px
+	padding 0 1rem
+
+.knots > ul
+	display grid
+	grid-template-columns repeat(auto-fit, minmax(200px, 1fr))
+	grid-gap 1.25rem
+
+.card:hover
+	border 1px solid yellow
 
 .knot
-	width 30%
+	text-overflow ellipsis
 
 .tags
 	display flex
@@ -42,6 +57,5 @@
 .summary
 	font-size 0.8em
 	padding-bottom 4px
-	a
-		color black
+
 </style>
