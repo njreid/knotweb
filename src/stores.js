@@ -38,13 +38,13 @@ export const knots = readable([
 		use_category: 'Sailing, Climbing, Rescue'
 	},
 	{
-		name: "Fisherman's Knot",
+		name: 'Fishermans Knot',
 		description:
 			'A strong knot often used by anglers to join two lines or to tie a fly to a leader. It can also be used in rescue and climbing situations.',
 		use_category: 'Fishing, Climbing, Rescue'
 	},
 	{
-		name: "Double Fisherman's Knot",
+		name: 'Double Fishermans Knot',
 		description:
 			'A strong and secure bend knot that is often used in climbing and rescue situations. It is also used by divers to secure their tanks.',
 		use_category: 'Climbing, Rescue, Scuba Diving'
@@ -56,7 +56,7 @@ export const knots = readable([
 		use_category: 'Climbing, Rescue, Outdoor'
 	},
 	{
-		name: "Trucker's Hitch",
+		name: 'Truckers Hitch',
 		description:
 			'A knot used to secure a load on a truck or trailer. It can also be used to hoist a heavy object or as a makeshift pulley system.',
 		use_category: 'Transportation, Lifting, Outdoor'

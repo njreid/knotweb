@@ -13,3 +13,15 @@ In the 19th century, the sheet bend knot was widely used by stevedores and dockw
 The sheet bend knot was later used by explorers and mountaineers, who found it to be a reliable and secure knot for joining ropes of different sizes. Today, the sheet bend is still widely used by sailors, fisherman, and boaters, as well as by campers, hikers, and other outdoor enthusiasts.
 
 In modern times, the sheet bend knot is considered to be one of the most useful and versatile knots, as it can be used in a variety of situations and settings, from boating and fishing, to camping and climbing. It is a knot that has stood the test of time and remains a vital part of many industries and activities, a testament to its utility and effectiveness. It is also taught as a basic knot in many nautical schools and Scout groups.
+
+### Instructions
+
+1. Take the thicker rope, known as the bight, and make a loop.
+1. Take the thinner rope, known as the working end, and thread it through the loop from underneath.
+1. Bring the working end over the top of the bight and then back underneath it.
+1. Take the working end and thread it behind the bight.
+1. Bring the working end up and over the top of the bight, creating a second loop.
+1. Take the working end and thread it through the second loop.
+1. Pull both ends of the ropes to tighten the knot.
+
+> Note: The sheet bend is a versatile knot that is used to tie two ropes of different thicknesses together. It is often used in boating and sailing applications to tie sheets (ropes used to control the sails) to cleats or other fixtures on the boat.
