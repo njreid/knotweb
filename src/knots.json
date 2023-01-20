@@ -70,11 +70,6 @@
 		"use_category": "Climbing, Rescue"
 	},
 	{
-		"name": "Sheet Bend",
-		"description": "A knot often used to tie two ropes of different sizes together. It is a strong and reliable knot that is easy to tie and untie.",
-		"use_category": "Camping, Hiking, Boating"
-	},
-	{
 		"name": "Stevedore's Knot",
 		"description": "A strong and secure knot often used in boating and cargo work. It is easy to tie and untie, and is often used to secure a rope to a load.",
 		"use_category": "Boating, Cargo"
